@@ -1,5 +1,8 @@
 1. Volatile Evedence - in lecture(week 8) 
 Networking data - Netstat , Ifconfig , Date & ping
+
+Copy all the Password and network data in /etc/ Install 'shutil'
+
 Unix data - Ps(Process), Df mountpoints, DiskUsage (DU)
 Uname - OS version, W (Logged on Users)
 Root access - fdisk, crontab, viewing Logs
