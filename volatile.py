@@ -53,28 +53,28 @@ print("\n")
 
 #Copy Essential details
 print("<=======================Copying Forensic Interest Files==================>")
-cwd = os.getcwd()
-print("\n Copying /etc/passwd to ", cwd)
-shutil.copy('/etc/passwd', cwd)
+cwd = os.getcwd() + "/evidences" 
+print("\n Copying /etc/passwd to ", cwd + '/evidences')
+shutil.copy('/etc/passwd', cwd + '/evidences')
 
-print("\n Copying /etc/shadow  to ", cwd)
+print("\n Copying /etc/shadow  to ", cwd + '/evidences')
 #shutil.copy('/etc/shadow', cwd)
 
-print("\n Copying /etc/init.d to ", cwd)
+print("\n Copying /etc/init.d to ", cwd + '/evidences')
 my_file = Path(" /etc/init.d to")
 if my_file.is_file():
-    shutil.copy(' /etc/init.d to', cwd)
+    shutil.copy(' /etc/init.d to', cwd + '/evidences')
 else:
     print("\n /etc/init.d Doesn't Exist")
 
-print("\n Copying /var/www to ", cwd)
+print("\n Copying /var/www to ", cwd + '/evidences')
 my_file = Path("/var/www")
 if my_file.is_file():
-    shutil.copy('/var/www ', cwd)
+    shutil.copy('/var/www ', cwd + '/evidences')
 else:
     print("\n /var/www Doesn't Exist")
 
-print("\n Copying /var/log to ", cwd)
+print("\n Copying /var/log to ", cwd + '/evidences')
 src = "/var/log"
 dst = cwd
 def copytree(src, dst, symlinks=False, ignore=None):
@@ -87,10 +87,10 @@ def copytree(src, dst, symlinks=False, ignore=None):
             shutil.copy2(s, d)
 print("\n All Logs copied!!")
 
-print("\n Copying /var/lib/mysql  to ", cwd)
+print("\n Copying /var/lib/mysql  to ", cwd + '/evidences')
 my_file = Path("/var/lib/mysql")
 if my_file.is_file():
-    shutil.copy('/var/lib/mysql', cwd)
+    shutil.copy('/var/lib/mysql', cwd + '/evidences')
 else:
     print("\n /var/lib/mysql Doesn't Exist")
 
