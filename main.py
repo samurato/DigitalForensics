@@ -21,7 +21,7 @@ while choice !='6':
     print("6. Exit/Log out")
 
 
-choice = input("\nOption: ")
+    choice = input("\nOption: ")
 
     if choice == '1':
         print("\nHere's a bicycle. Have fun!\n")
@@ -29,9 +29,9 @@ choice = input("\nOption: ")
         print("\nHere are some running shoes. Run fast!\n")
     elif choice == '3':
         print("\nHere's a map. Can you leave a trip plan for us?\n")
-        elif choice == '4':
+    elif choice == '4':
         print("\nHere's a map. Can you leave a trip plan for us?\n")
-        elif choice == '5':
+    elif choice == '5':
         print("\nHere's a map. Can you leave a trip plan for us?\n")
     elif choice == '6':
         print("\nThanks for playing. See you later.\n")
