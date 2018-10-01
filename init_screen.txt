@@ -15,7 +15,10 @@
       / / /
      / / /
      \__/
-
+Dependencies:
+Python 3 
+    whois
+    
  Contributors:
             1. Gurparteek Singh (OYE!)
             2. Muhammad Hamza Khalid (SPY!!)
