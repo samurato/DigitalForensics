@@ -1,0 +1,58 @@
+1. Volatile Evedence - in lecture(week 8) 
+Networking data - Netstat , Ifconfig , Date & ping
+Unix data - Ps(Process), Df mountpoints, DiskUsage (DU)
+Uname - OS version, W (Logged on Users)
+Root access - fdisk, crontab, viewing Logs
+Shell Versions
+
+2. Non Volatile 
+memory information - /Proc
+ virtual folder
+  boot image - /proc/cmdline
+  CPU details - /proc/cpuinfo
+  memory manager - /proc/meminfo
+
+3. Log Files
+/var/log
+apache2 web server access
+– access.log – web visitors
+– ssl-access.log – ssl visitors
+• auth.log 
+•authentication (password)
+• mail.log 
+• mail
+• mysql.log 
+• database
+• lpr.log 
+• line printer
+• syslog app 
+•logging
+
+4. journalctl options Check Slide 33
+
+5. Users Logon
+Forensics Sequence
+• a) Identify the usernames
+/etc/passwd
+cat /etc.passwd | grep bash
+/bin/bash
+
+• b) Find the user sessions
+
+whatislast
+last root
+last group11
+last reboot
+last -x -n 20    - system files
+
+• c) Find the log entries
+cat /var/log/auth.log | grep gdm
+Remote logins using ssh
+
+4. dhcp activity
+• a) Get the current ip address details
+• b) Find the log entries
+
+Unzip Zip files
+
+.bash_history 
