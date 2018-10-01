@@ -5,10 +5,10 @@ f =open('init_screen.txt', 'r')
 file_contents =f.read()
 print(file_contents)
 
-userName  = raw_input("Please Enter your full name: ")
-userId = raw_input("Please Enter your id/Badge no.: ")
-userOrganisation = raw_input("Please Enter the Organisation Name: ")
-EvidenceId = raw_input("Please Enter the Evidence Name and Tracking ID: ")
+userName  = input("Please Enter your full name: ")
+userId = input("Please Enter your id/Badge no.: ")
+userOrganisation = input("Please Enter the Organisation Name: ")
+EvidenceId = input("Please Enter the Evidence Name and Tracking ID: ")
 print("Needs Super User Access")
 choice = ''
 while choice !='6':
