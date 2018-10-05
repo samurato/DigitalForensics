@@ -8,5 +8,5 @@ some="$(curl -s ifconfig.me/ip)"
 currentIp = "ifconfig.me/ip"
 userIp=subprocess.call(["curl", currentIp])
 sendIp = "$("+ str(userIp) +")"
-subprocess.call (["whois", sendIp])
+subprocess.call (["whois ", sendIp])
 print("\n ")
