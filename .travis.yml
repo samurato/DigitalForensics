@@ -10,4 +10,4 @@ python:
   - pip install -r requirements.txt
   - pip install .
 sudo: enabled
-script: main
+script: python3 main.py
