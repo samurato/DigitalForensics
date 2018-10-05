@@ -9,6 +9,7 @@ userName  = input("Please Enter your full name: ")
 userId = input("Please Enter your id/Badge no.: ")
 userOrganisation = input("Please Enter the Organisation Name: ")
 EvidenceId = input("Please Enter the Evidence Name and Tracking ID: ")
+#TODO Hashing
 print("\nNeeds Super User Access to Run this tool\n")
 
 investigate = open('evidences/investigator.txt', "w+")
