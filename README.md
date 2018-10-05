@@ -1,39 +1,8 @@
 # DigitalForensics
 -----------------------48436 Digital Forensics - Spring 2018 Assignment-------------------------------
-     ______              
-         .-'   _ `-.           
-       .'     | |    `.         
-      /       | |     \        
-     ;        | |      ;`       
-     |        | |      |;         
-     ;        | |_ _ _ ;|
-     '\       |_ _ _ _/ ;inux Forensics...     
-      \`.           .' /        
-       `.`-._____.-' .'         
-         / /`_____.-'           
-        / / /                   
-       / / /
-      / / /
-     / / /
-    / / /
-   / / /
-  / / /
- / / /
-/ / /
-\/_/
-
-------------------------- Usage--------------------------------------------------------------------
-You will need the Super user access for this to run
-
-make sure you are in the working directory which is DigitalForensics
-
-Make sure the shell file is executable by :
-
-sudo chmod u+x ./main.sh
-
-Then run the file by
-
-sudo ./main.sh
+     
+this tool can be used as a digital forensics first reaponder tool or to scan your vps :
+Topic covered: Volatile artifacts, Non volatile artifacts, user logon informations, Log files of servers
 
 
 ---------------------------Topics to be covered------------------------------------------
@@ -50,7 +19,6 @@ What would you recommend as sound business practice for the use of a Windows Sys
 unauthorised forensics?
 ------------------------------Tools and librarys used -------------------------------------
 1.
-2.
 
 
 
@@ -58,5 +26,4 @@ unauthorised forensics?
 
 
 
-
-------------------------------- Feautres -----------------------------------------------------
+------------------------------- Feautres ------------------------------------------------
