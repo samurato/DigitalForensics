@@ -1,8 +1,9 @@
- # **DigitalForensics**
+ # **DigitalForensics**   ![Image of Travis](https://travis-ci.com/samurato/DigitalForensics.svg?token=q1JpXQyRPWysqsAiDfK3&branch=master)
+
 ## University of Technology Sydney 48436 Digital Forensics - Spring 2018 Assignment
 ### Demonstration of the Linux artifacts
 
-This tool can be used as a digital forensics first reaponder tool or to scan your vps use at your own risk please have a .written permission or a warrant before using this tool.
+This tool can be used as a digital forensics first reaponder tool or to scan your vps. Use at your own risk please have a written permission or a warrant before using this tool.
 
 ## Topic covered: 
 * Volatile artifacts  [x]
