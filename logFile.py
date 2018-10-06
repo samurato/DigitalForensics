@@ -14,7 +14,7 @@ from subprocess import call
 
 #Copy non-volatile log files
 print("<=======================Copying Authentication Log==================>")
-cwd = os.getcwd()
+cwd = os.getcwd()+ "/evidences" 
 selectedFile = Path("/var/log/auth.log")
 if selectedFile.is_file():
     print("\nCopying /var/log/auth.log to ", cwd + "/logfiles")
