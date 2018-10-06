@@ -12,7 +12,7 @@ EvidenceId = input("Please Enter the Evidence Name and Tracking ID: ")
 #TODO Hashing
 print("\nNeeds Super User Access to Run this tool\n")
 
-investigate = open('evidences/investigator.txt', "w+")
+investigate = open('evidences/final.txt', "w+")
 investigate.write("***************First Responder Information ********************")
 investigate.write("\nInvestigator Name: "+userName)
 investigate.write("\nInvestigator ID: "+userId)

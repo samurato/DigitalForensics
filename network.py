@@ -11,7 +11,7 @@ userIp=subprocess.call(["curl", currentIp])
 # sendIp = "$("+ str(userIp) +")"
 # subprocess.call (["whois ", sendIp])
 print("\n ")
-writeLog = open('evidences/networkLog.txt', "w+")
+writeLog = open('evidences/final.txt', "w+")
 writeLog.write("\n************* Network Evidence logs ******************\n")
 writeLog.write(str(userIp))
 #TODO: Whois data
