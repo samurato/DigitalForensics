@@ -1,2 +1,1 @@
-whois
-path
+whois == 0.7
