@@ -1,13 +1,15 @@
+sudo: true
 language: python
 python:
-  - "2.7"
+  - "3.3"
   - "3.4"
   - "3.5"
+  - "3.5-dev"  # 3.5 development branch
   - "3.6"
-  # PyPy versions
-  - "pypy3.5"
- install:
-  - pip install -r requirements.txt
-  - pip install .
-sudo: enabled
-script: main
+  - "3.6-dev"  # 3.6 development branch
+  - "3.7-dev"  # 3.7 development branch
+# command to install dependencies
+
+# command to run tests
+script:
+  - python3 main.py
