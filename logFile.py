@@ -17,6 +17,7 @@ writeLog.write("\n************* Evidence logs ******************\n")
 #Copy non-volatile log files
 print("<=======================Copying Authentication Log==================>")
 my_file = Path("/var/log/auth.log")
+print(my_file)
 if my_file.is_file():
     f =open('/var/log/auth.log', 'r')
     AuthLog = f.read()
@@ -24,6 +25,7 @@ if my_file.is_file():
     writeLog.write("\n******************* Authentication Log **************\n")
     writeLog.write(AuthLog)
 else:
+    print(my_file.is_file())
     print("\n /var/log/auth.log Doesn't Exist")
 # selectedFile = Path("/var/log/auth.log")
 # if selectedFile.is_file():
