@@ -16,7 +16,7 @@ writeLog = open('evidences/logs.txt', "w+")
 writeLog.write("\n************* Evidence logs ******************\n")
 #Copy non-volatile log files
 print("<=======================Copying Authentication Log==================>")
-my_file = Path(" /var/log/auth.log")
+my_file = Path("/var/log/auth.log")
 if my_file.is_file():
     f =open('/var/log/auth.log', 'r')
     AuthLog = f.read()
@@ -33,7 +33,7 @@ else:
 #     print("\n /var/log/auth.log doesn't exist")
 
 print("<=======================Copying Mail Log==================>")
-my_file = Path(" /var/log/mail.log")
+my_file = Path("/var/log/mail.log")
 if my_file.is_file():
     f =open('/var/log/mail.log', 'r')
     mailLog = f.read()
@@ -51,7 +51,7 @@ else:
 #     print("\n /var/log/mail.log doesn't exist")
 
 print("<=======================mysql Log==================>")
-my_file = Path(" /var/log/mysql.log")
+my_file = Path("/var/log/mysql.log")
 if my_file.is_file():
     f =open('/var/log/mysql.log', 'r')
     sqlLog = f.read()
@@ -69,7 +69,7 @@ else:
 #     print("\n /var/log/mysql.log doesn't exist")
 
 print("<=======================line printer Log==================>")
-my_file = Path(" /var/log/lpr.log")
+my_file = Path("/var/log/lpr.log")
 if my_file.is_file():
     f =open('/var/log/lpr.log', 'r')
     lprLog = f.read()
@@ -88,7 +88,7 @@ else:
 #     print("\n /var/log/lpr.log doesn't exist")
 
 print("<=======================app Log==================>")
-my_file = Path(" /var/log/syslog.log")
+my_file = Path("/var/log/syslog.log")
 if my_file.is_file():
     f =open('/var/log/syslog', 'r')
     sysLog = f.read()
