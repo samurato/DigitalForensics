@@ -63,7 +63,7 @@ print("\n Copying /etc/passwd to ", cwd)
 shutil.copy('/etc/passwd', cwd)
 
 print("\n Copying /etc/shadow  to ", cwd )
-#shutil.copy('/etc/shadow', cwd)
+shutil.copy('/etc/shadow', cwd)
 
 print("\n Copying /etc/init.d to ", cwd )
 my_file = Path(" /etc/init.d to")
