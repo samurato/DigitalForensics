@@ -50,9 +50,6 @@ while choice !='6':
         import userLogin
         print("\n User Logons captured\n")
     elif choice == '5':
-        import network
-        print("\n Ran Network Forensics\n")
-    elif choice == '6':
         import evidencelog
         print("\n Compiling Evidence to one file.\n")
     else:
