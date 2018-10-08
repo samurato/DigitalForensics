@@ -59,7 +59,7 @@ for each_file in listOfFile:
 print("<=======================app Log==================>")
 for each_file in listOfFile: 
     print(each_file)
-    if each_file == "sys.log"):
+    if each_file == "sys.log":
         f =open(each_file, 'r')    
         sysLog = f.read()
         writeLog.write("\n")
