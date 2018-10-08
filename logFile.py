@@ -14,7 +14,7 @@ my_file = Path("/var/log/")
 listOfFile= os.listdir(my_file)
 for each_file in listOfFile: 
     print(each_file)
-    if each_file.startswith("auth"):
+    if each_file == "auth.log":
         f =open(each_file, 'r')
         AuthLog = f.read()
         print(AuthLog)
