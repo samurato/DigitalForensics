@@ -17,12 +17,16 @@ from Crypto.Hash import SHA256
 #             outfile.write(infile.read())
 
 investigatorA = open('evidences/investigator.txt' , 'r')
-investigatorB = open('evidences/networkLog.txt' , 'r')
-investigatorC = open('evidences/nonVolatile.txt' , 'r')
+investigatorAa = open('evidences/final.txt')
+investigatorB = open('evidences/logs.txt' , 'r')
+investigatorC = open('nonVolatile.txt','r')
+investigatorD = open('evidences/userLogons.txt' , 'r')
 writeLog = open('evidences/final.txt', "w+")
 writeLog.write(str(investigatorA.read()))
+writeLog.write(str(investigatorAa.read()))
 writeLog.write(str(investigatorB.read()))
 writeLog.write(str(investigatorC.read()))
+writeLog.write(str(investigatorD.read()))
 writeLog.close()
 
 field = open('evidences/final.txt','r')
