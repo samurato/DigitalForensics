@@ -9,8 +9,8 @@ cwd = os.getcwd()+ "/evidences"
 writeLog = open('evidences/logs.txt', "w+")
 writeLog.write("\n************* Evidence logs ******************\n")
 print("<=======================Apache Log==================>")
-#my_file = Path("/var/log/apache2")
-#listOfFile= os.listdir(my_file)
+my_file = Path("/var/log/apache2")
+listOfFile= os.listdir(my_file)
 #for each_file in listOfFile: 
     #if each_file == "access.log":
         #f =open(each_file, 'r')
