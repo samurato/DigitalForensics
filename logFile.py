@@ -8,73 +8,76 @@ from subprocess import call
 cwd = os.getcwd()+ "/evidences" 
 writeLog = open('evidences/logs.txt', "w+")
 writeLog.write("\n************* Evidence logs ******************\n")
+print("<=======================Copying Authentication Log==================>")
+my_file = Path("/var/log/apache2")
+listOfFile= os.listdir(my_file)
+for each_file in listOfFile: 
+    if each_file == "access.log":
+        f =open(each_file, 'r')
+        AuthLog = f.read()
+        writeLog.write("\n******************* Authentication Log **************\n")
+        writeLog.write(AuthLog)
+        
+for each_file in listOfFile: 
+    if each_file == "access.log":
+        f =open(each_file, 'r')
+        AuthLog = f.read()
+        writeLog.write("\n******************* Authentication Log **************\n")
+        writeLog.write(AuthLog)
+
 #Copy non-volatile log files
 print("<=======================Copying Authentication Log==================>")
 my_file = Path("/var/log/")
 listOfFile= os.listdir(my_file)
 for each_file in listOfFile: 
-    print(each_file)
     if each_file == "auth.log":
         f =open(each_file, 'r')
         AuthLog = f.read()
-        print(AuthLog)
         writeLog.write("\n******************* Authentication Log **************\n")
         writeLog.write(AuthLog)
-    else:
-        print(my_file.is_file())
-        print("\n /var/log/auth.log Doesn't Exist")
 
 print("<=======================Copying Mail Log==================>")
 for each_file in listOfFile: 
     print(each_file)
-    if each_file.startswith("mail"):
+    if each_file. == "mail.log":
         f =open(each_file, 'r')
         mailLog = f.read()
-        print(mailLog)
         writeLog.write("\n")
         writeLog.write("\n****************** Mail Log *********************\n")
         writeLog.write(mailLog)
-    else:
-        print("\n /var/log/mail Doesn't Exist")
-
-print("<=======================mysql Log==================>")
-for each_file in listOfFile: 
-    print(each_file)
-    if each_file.startswith("mysql"):
-        f =open(each_file, 'r')
-        sqlLog = f.read()
-        print(sqlLog)
-        writeLog.write("\n")
-        writeLog.write("\n***************** mysql Log ************************\n")
-        writeLog.write(sqlLog)
-    else:
-        print("\n /var/log/mysql Doesn't Exist")
 
 print("<=======================line printer Log==================>")
 for each_file in listOfFile: 
     print(each_file)
-    if each_file.startswith("lpr"):
+    if each_file == "lrp":
         f =open(each_file, 'r')
         lprLog = f.read()
-        print(lprLog)
-        writeLog.write("\n")
+        writeLog.write("\n")  
         writeLog.write("\n***************** line printer Log ************************\n")
         writeLog.write(lprLog)
-    else:
-        print("\n /var/log/lpr.log Doesn't Exist")
 
 print("<=======================app Log==================>")
 for each_file in listOfFile: 
     print(each_file)
-    if each_file.startswith("sysLog"):
+    if each_file == "sys.log"):
         f =open(each_file, 'r')    
         sysLog = f.read()
-        print(sysLog)
         writeLog.write("\n")
         writeLog.write("\n***************** app Log ************************\n")
         writeLog.write(sysLog)
-    else:
-        print("\n /var/log/syslog.log Doesn't Exist")
+
+print("<=======================mysql Error Log==================>")
+my_file = Path("/var/log/mysql")
+listOfFile= os.listdir(my_file)
+for each_file in listOfFile: 
+    print(each_file)
+    if each_file == "error.log":
+        f =open(each_file, 'r')
+        sqlLog = f.read()
+        writeLog.write("\n")
+        writeLog.write("\n***************** mysql Log ************************\n")
+        writeLog.write(sqlLog)
+
 print("\n ")
 writeLog.write("\n")
 writeLog.close()
