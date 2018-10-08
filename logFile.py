@@ -8,21 +8,21 @@ from subprocess import call
 cwd = os.getcwd()+ "/evidences" 
 writeLog = open('evidences/logs.txt', "w+")
 writeLog.write("\n************* Evidence logs ******************\n")
-print("<=======================Copying Authentication Log==================>")
+print("<=======================Apache Log==================>")
 my_file = Path("/var/log/apache2")
 listOfFile= os.listdir(my_file)
 for each_file in listOfFile: 
     if each_file == "access.log":
         f =open(each_file, 'r')
         AuthLog = f.read()
-        writeLog.write("\n******************* Authentication Log **************\n")
+        writeLog.write("\n******************* Apache Log **************\n")
         writeLog.write(AuthLog)
-        
+
 for each_file in listOfFile: 
-    if each_file == "access.log":
+    if each_file == "ssl-access.log":
         f =open(each_file, 'r')
         AuthLog = f.read()
-        writeLog.write("\n******************* Authentication Log **************\n")
+        writeLog.write("\n******************* SSL Apache Log **************\n")
         writeLog.write(AuthLog)
 
 #Copy non-volatile log files
@@ -39,7 +39,7 @@ for each_file in listOfFile:
 print("<=======================Copying Mail Log==================>")
 for each_file in listOfFile: 
     print(each_file)
-    if each_file. == "mail.log":
+    if each_file == "mail.log":
         f =open(each_file, 'r')
         mailLog = f.read()
         writeLog.write("\n")
